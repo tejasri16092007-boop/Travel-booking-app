@@ -1,29 +1,30 @@
-# Travel Booking Application
+#  Travel Booking Application - Machine Learning Data Pipeline
 
-## 1. Problem Statement
-Building a smart travel booking application that helps users explore top holiday destinations, compare real-time prices, and check accommodation availability smoothly.
+An advanced, end-to-end Python-based data application designed to optimize travel planning, handle promotional discounting streams, and automate memory-efficient recommendation queries.
 
-## 2. Dataset Source
-* **Source:** Custom curated travel dataset.
-* **Primary Data Path:** `Data/destinations.csv`
-* **Cleaned Data Path:** `Data/processed/cleaned_destinations.csv`
+---
 
-## 3. Project Approach & Preprocessing (Week 1)
-* **Data Exploration:** Analyzed dataset shapes, types, and verified zero missing values using Python (`explore.py`).
-* **Data Cleaning:** Properly formatted structure and moved it to the processed folder.
-* **Feature Engineering:** Created derived features like budget metrics, mapping categorical availability, and splitting the data into an 80/20 train/test ratio (`features.py`).
+##  Advanced Features Implemented (Week 3)
 
-## 4. Core Implementation & Features (Week 2 Updates)
-* **Core Feature 1 (Cost Calculator):** Implemented a destination finder and dynamic trip cost calculator with type verification (`booking_feature.py`).
-* **Core Feature 2 (Promo Engine):** Connected a coupon/discount tier system to the base calculator function (`discount_feature.py`).
-* **Core Feature 3 (Receipt Generator):** Created an end-to-end receipt generator that calculates 12% GST tax and tier-specific service fees (`receipt_feature.py`).
-* **Validation Gateway:** Wrapped core execution flows inside automated try-except exception blocks (`validation_handler.py`).
-* **Test Suite:** Designed an automated 10-flow testing matrix covering standard paths and adversarial edge cases (`test_suite.py`).
+### 1. Smart Destination Recommendation Engine (`recommendation_engine.py`)
+- **Automated Score Sorting:** Employs optimized logic filters to match user budget constraints against real-time price matrices.
+- **Fail-Safe Checks:** Prevents application failure during massive text data lookups by safely skipping non-existent configurations.
 
-## 5. Visualizations & System Charts
-Below are the initial structural charts for our dataset flow:
+### 2. Personalized Itinerary Customizer (`itinerary_customizer.py`)
+- **Integrated Architecture:** Directly connects core payment gateways with newly introduced premium add-on layers (e.g., trekking, scuba).
+- **Dynamic Tier Support:** Auto-calculates system-wide price updates without blocking baseline runtime structures.
 
-![Data Flow Chart](https://placehold.co/600x300/2c3e50/ffffff?text=Data+Flow+and+Exploration+Chart)
+### 3. UI Interface Polish & Layout Controls (`ui_polish.py`)
+- **Visual Micro-States:** Integrated mock loading buffers, empty search screen handlers, and descriptive system warning blocks.
 
-![Feature Engineering Split](https://placehold.co/600x300/27ae60/ffffff?text=Train+Test+80-20+Split+Visualization)
+### 4. Performance Tuning & Memory Optimization (`performance_optimizer.py`)
+- **In-Memory Caching Store:** Avoids repetitive disk scans by caching user search historical structures.
+- **Memory Footprint reduction:** Forced memory efficiency by declaring custom categorical datatypes.
+
+---
+
+##  User Testing & Optimization Gateway (`user_testing_log.py`, `user_testing_fixes.py`)
+- Conducted exhaustive multi-user testing sessions to track system edge cases.
+- Implemented robust string sanitizers (`.strip().upper()`) to ensure absolute input case-insensitivity.
+
 
