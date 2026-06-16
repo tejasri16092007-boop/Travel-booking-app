@@ -1,15 +1,10 @@
-# Travel Booking App 
+# Travel Booking App ✈️
 
 ## Project Description
 This is a simple Travel Booking Application built using Python and Streamlit. It helps users login, book their travel tickets, and view their booking history in an organized way.
 
 ## Live Demo
-Check out the live app here: [Add Your Streamlit Link Here]
-
-## Screenshots
-![Login Page](Add_Link_To_Login_Image_Here)
-![Booking Form](Add_Link_To_Booking_Image_Here)
-![Bookings Table](Add_Link_To_ViewBookings_Image_Here)
+Check out the live app here: https://eytstxcfnq.streamlit.app/
 
 ## Features
 - Secure Login System
@@ -27,6 +22,3 @@ Check out the live app here: [Add Your Streamlit Link Here]
 1. Clone this repository to your local machine.
 2. Install requirements: `pip install -r requirements.txt`
 3. Run the app: `streamlit run app.py`
-
-
-
